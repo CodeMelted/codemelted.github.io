@@ -35,14 +35,14 @@ async function  main() {
     const html = `
         <style>
             .cm-round-button {
-                position: absolute;
-                bottom: 5px;
-                right: 5px;
+                position: fixed;
+                bottom: 15px;
+                right: 15px;
                 display: block;
                 width: 80px;
                 height: 80px;
                 line-height: 80px;
-                border: 2px solid #f5f5f5;
+                border: 2px solid black;
                 border-radius: 50%;
                 text-align: center;
                 text-decoration: none;
