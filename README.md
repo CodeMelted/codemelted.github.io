@@ -1,5 +1,5 @@
 <center>
-  <img style="width: 100%; max-width: 400px;" src="https://codemelted.com/support/logos/logo-website-non-banner2.png" />
+  <img style="width: 100%; max-width: 500px;" src="https://codemelted.com/support/logos/logo-website-non-banner2.png" />
   <div style="display: grid; grid-template-columns: auto auto auto auto auto; width: 100%; max-width: 500px;">
     <a title="About Me" href="CodeMelted" target="_self"><img style="height: 30px;" src="images/github.png"/></a>
     <a title="Embedded Module" href="codemelted_embedded" target="_self"><img style="height: 30px;" src="images/c.png"/></a>
