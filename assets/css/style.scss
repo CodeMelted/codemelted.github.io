@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header {
+    display: none;
+}
+
+#title {
+    display: none;
+}
+
+section {
+    margin-top: 15px;
+}
