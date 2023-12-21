@@ -15,11 +15,11 @@
 TBD
 
 <script>
-    if (!(window===window.parent)) {
+    if (window===window.parent) {
         setTimeout(() => {
             console.log("Not under Iframe");
         });
     } else {
-        console.log("Hello");
+        console.log("Under an IFrame");
     }
 </script>
