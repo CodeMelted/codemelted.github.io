@@ -19,5 +19,7 @@ TBD
         setTimeout(() => {
             console.log("Not under Iframe");
         });
+    } else {
+        console.log("Hello");
     }
 </script>
