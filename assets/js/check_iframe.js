@@ -52,7 +52,7 @@ async function  main() {
                 font-weight: bold;
             }
         </style>
-        <a title="Phone Home" href="https://codemelted.github.io"><img class="cm-round-button" src="assets/images/apple-touch-icon.png" /></a>
+        <a title="Phone Home" href="https://codemelted.github.io"><img class="cm-round-button" src="assets/images/phone-home.png" /></a>
     `;
     document.body.innerHTML += html;
 }
