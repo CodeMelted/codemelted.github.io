@@ -24,19 +24,21 @@ DEALINGS IN THE SOFTWARE.
 ===============================================================================
 */
 
-/* Styles the main developer.codemelted.com page */
-
-@import "navigation.css";
-@import "{{ site.theme }}";
-
-header {
-    display: none;
+/* Scroll Bar Configuration */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 3px;
 }
-
-#title {
-    display: none;
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
 }
-
-section {
-    margin-top: 15px;
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
