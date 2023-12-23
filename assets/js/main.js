@@ -47,6 +47,11 @@ async function  main() {
                 font-size: 20px;
                 font-weight: bold;
             }
+            @media print {
+                .cm-round-button {
+                    display: none;
+                }
+            }
         </style>
         <a title="CodeMelted - PWA" href="https://codemelted.com"><img class="cm-round-button" src="https://codemelted.github.io/assets/images/icons/phone-home.png" /></a>
     `;
