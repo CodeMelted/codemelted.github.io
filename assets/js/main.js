@@ -24,14 +24,10 @@ DEALINGS IN THE SOFTWARE.
 ===============================================================================
 */
 
-async function  main() {
-    // We are under an iframe, we are good.
-    if (window != window.parent) {
-        return;
-    }
+// TODO - import codemelted_fullstack module
 
-    // We are not under an iframe, we need to provide a home button
-    // for our main main domain.
+async function  main() {
+    // Add a home button for the PWA to our page.
     const html = `
         <style>
             .cm-round-button {
@@ -55,5 +51,7 @@ async function  main() {
         <a title="CodeMelted - PWA" href="https://codemelted.com"><img class="cm-round-button" src="https://codemelted.github.io/assets/images/icons/phone-home.png" /></a>
     `;
     document.body.innerHTML += html;
+
+    // TODO: Hookup our codemelted_fullstack module broadcast channel
 }
 main();
