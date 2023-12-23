@@ -2,9 +2,25 @@
 ---
 
 @import "{{ site.theme }}";
-@import "scrollbars";
 
-/* Hide some data things we don't want on page */
+/* Scroll Bar Configuration */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 3px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 header {
     display: none;
