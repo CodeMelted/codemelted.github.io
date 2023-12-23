@@ -32,7 +32,7 @@ async function  main() {
         <style>
             .cm-round-button {
                 position: fixed;
-                bottom: 100px;
+                bottom: 75px;
                 right: 15px;
                 display: block;
                 width: 80px;
