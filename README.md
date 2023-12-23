@@ -5,7 +5,7 @@
     <a title="Raspberry Pi Project" href="codemelted_pi" target="_self"><img style="height: 30px;" src="assets/images/icons/raspberry-pi.png"/></a>    
     <a title="Embedded Module" href="codemelted_embedded" target="_self"><img style="height: 30px;" src="assets/images/icons/c.png"/></a>
     <a title="Terminal Module" href="codemelted_terminal" target="_self"><img style="height: 25px;" src="assets/images/icons/powershell.png"/></a>
-    <a title="Fullstack Module" href="codemelted_fullstack" target="_self"><img style="height: 30px;" src="assets/images/icons/javascript.png"/></a>
+    <a title="Fullstack Module" href="codemelted_fullstack/docs" target="_self"><img style="height: 30px;" src="assets/images/icons/javascript.png"/></a>
     <a title="Web Module" href="codemelted_web/docs" target="_self"><img style="height: 30px;" src="assets/images/icons/flutter.png"/></a>
   </div>
 </center>
