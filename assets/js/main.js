@@ -26,6 +26,61 @@ DEALINGS IN THE SOFTWARE.
 
 // TODO - import codemelted_fullstack module
 
+/**
+ * Opens a new browser window as a popup.
+ * @param {string} url URL protocol to open
+ * @param {string} [windowName] Optional target name for the window.
+ * @param {number} [width] Optional width of the window.
+ * @param {number} [height] Optional height of the window.
+ * @returns {Window}
+ */
+function popupWindow(url, windowName, width = undefined, height = undefined) {
+    const w = width ? width : 900;
+    const h = height ? height : 500;
+    const top = (screen.height - h) / 2;
+    const left = (screen.width - w) / 2;
+    return window.open(
+        url,
+        windowName,
+        `toolbar=no, location=no, directories=no, status=no, ` +
+        `menubar=no, scrollbars=no, resizable=yes, copyhistory=no, ` +
+        `width=${w}, height=${h}, top=${top}, left=${left}`
+    );
+}
+
+/**
+ * Sets up the button onclick handlers for the fixed header social icons of
+ * the page.
+ */
+function setupSocialHandlers() {
+    // Get the buttons
+    const btnDevSupport = document.getElementById("btnDevSupport");
+    const btnDevJSON = document.getElementById("btnDevJSON");
+    const btnDevGitHub = document.getElementById("btnDevGitHub");
+
+    // Setup the handlers
+    if (btnDevSupport) {
+        btnDevSupport.onclick = (e) => {
+            e.preventDefault();
+            popupWindow("https://buymeacoffee.com/codemelted");
+        }
+    }
+
+    if (btnDevJSON) {
+        btnDevJSON.onclick = (e) => {
+            e.preventDefault();
+            popupWindow("https://developer.codemelted.com/feed.json");
+        }
+    }
+
+    if (btnDevGitHub) {
+        btnDevGitHub.onclick = (e) => {
+            e.preventDefault();
+            popupWindow("https://github.com/codemelted");
+        }
+    }
+}
+
 async function  main() {
     // Add a home button for the PWA to our page.
     const html = `
@@ -56,7 +111,7 @@ async function  main() {
         <a title="CodeMelted - PWA" href="https://codemelted.com"><img class="cm-round-button" src="https://codemelted.github.io/assets/images/icons/phone-home.png" /></a>
     `;
     document.body.innerHTML += html;
-
+    setupSocialHandlers();
     // TODO: Hookup our codemelted_fullstack module broadcast channel
 }
 main();

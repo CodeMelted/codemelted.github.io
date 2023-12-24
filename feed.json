@@ -1,0 +1,79 @@
+{
+  "title": "CodeMelted Developer - Feed",
+  "description": "'Write once, run anywhere (WORA)' was the famous slogan made by Sun Microsystems in 1995.  At the time, this technology allowed for easy full stack engineering allowing you to target dedicated workstations and on premise servers. So long as a Java Runtime Environment existed, you could run your code. Java was unable to keep to their slogan as web browsers became more advanced, mobile devices became ubiquitous, and companies no longer required dedicated servers. Enter the Progressive Web Applications (PWA). A technology stack that utilizes the web browser as the ultimate runtime environment. You can run your application so long as a web browser is on the device. This is the same mantra and spirit of the original Java slogan. The goal of this project is to aid software engineers in building and delivering on PWAs. It will implement a series of identified use cases across the different identified SDK technologies to support all aspects of a PWA. The later sections of this document will expand on this philosophy.",
+  "feed_url": "https://developer.codemelted.com/feed.json",
+  "version": "https://jsonfeed.org/version/1.1",
+  "favicon": "https://codemelted.com/favicon.png",
+  "home_page_url": "https://codemelted.com",
+  "language": "en",
+  "authors": [
+    {
+      "name": "Mark Shaffer",
+      "url": "https://github.com/codemelted",
+      "avatar": "https://developer.codemelted.com/CodeMelted/assets/images/me.jpg"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://developer.codemelted.com/CodeMelted",
+      "title": "CodeMelted - About Me",
+      "image": "https://developer.codemelted.com/CodeMelted/assets/images/me.jpg",
+      "content_text": "Full stack software engineer specializing in cross-platform application development. Development experiences include working with communication wide area network (WAN) architectures, communication with external devices via network and serial comm, desktop applications with cross platform UI/UX requirements, mobile applications, and dedicated custom server services.  With this experience also comes the ability to fully document the software lifecycle from requirements / design, test plans, test cases, and end user documentation.",
+      "date_published": "2023-12-24",
+      "date_modified": null,
+      "tags": [
+        "Mark Shaffer",
+        "Full Stack Developer",
+        "Cross Platform Application Development",
+        "Wide Area Network",
+        "Software Engineer",
+        "Full Software Lifecycle"
+      ]
+    },
+    {
+      "id": "https://developer.codemelted.com/codemelted_embedded",
+      "title": "CodeMelted - Embedded Module",
+      "image": "https://developer.codemelted.com/assets/images/icons/c.png",
+      "content_text": "",
+      "date_published": "",
+      "date_modified": null,
+      "tags": []
+    },
+    {
+      "id": "https://developer.codemelted.com/codemelted_fullstack",
+      "title": "CodeMelted - Fullstack Module",
+      "image": "",
+      "content_text": "",
+      "date_published": "",
+      "date_modified": null,
+      "tags": []
+    },
+    {
+      "id": "https://developer.codemelted.com/codemelted_pi",
+      "title": "Codemelted - Raspberry Pi",
+      "image": "",
+      "content_text": "",
+      "date_published": "",
+      "date_modified": null,
+      "tags": []
+    },
+    {
+      "id": "https://developer.codemelted.com/codemelted_terminal",
+      "title": "CodeMelted - Terminal Module",
+      "image": "",
+      "content_text": "",
+      "date_published": "",
+      "date_modified": null,
+      "tags": []
+    },
+    {
+      "id": "https://developer.codemelted.com/codemelted_web",
+      "title": "CodeMelted - Web Module",
+      "image": "",
+      "content_text": "",
+      "date_published": "",
+      "date_modified": null,
+      "tags": []
+    }
+  ]
+}
