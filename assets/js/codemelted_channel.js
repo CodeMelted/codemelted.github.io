@@ -54,22 +54,22 @@ function popupWindow(url, windowName, width = undefined, height = undefined) {
  */
 function setupSocialHandlers() {
     // Get the buttons
-    const btnDevSupport = document.getElementById("btnDevSupport");
-    const btnDevJSON = document.getElementById("btnDevJSON");
-    const btnDevGitHub = document.getElementById("btnDevGitHub");
+    const btnSupport = document.getElementById("btnSupport");
+    const btnJSON = document.getElementById("btnJSON");
+    const btnGitHub = document.getElementById("btnGitHub");
     const btnTwitter = document.getElementById("btnTwitter");
     const btnYouTube = document.getElementById("btnYouTube");
 
     // Setup the handlers
-    if (btnDevSupport) {
-        btnDevSupport.onclick = (e) => {
+    if (btnSupport) {
+        btnSupport.onclick = (e) => {
             e.preventDefault();
             popupWindow("https://buymeacoffee.com/codemelted");
         }
     }
 
-    if (btnDevJSON) {
-        btnDevJSON.onclick = (e) => {
+    if (btnJSON) {
+        btnJSON.onclick = (e) => {
             e.preventDefault();
             const href = window.location.href.includes("content")
                 ? "https://content.codemelted.com/feed.json"
@@ -78,8 +78,8 @@ function setupSocialHandlers() {
         }
     }
 
-    if (btnDevGitHub) {
-        btnDevGitHub.onclick = (e) => {
+    if (btnGitHub) {
+        btnGitHub.onclick = (e) => {
             e.preventDefault();
             popupWindow("https://github.com/codemelted");
         }
@@ -101,7 +101,10 @@ function setupSocialHandlers() {
 }
 
 async function main() {
-    setupSocialHandlers();
-    // TODO: Hookup our codemelted_fullstack module broadcast channel
+    setTimeout(() => {
+        setupSocialHandlers();
+        console.log("In theory, we setup our social handlers");
+        // TODO: Hookup our codemelted_fullstack module broadcast channel
+    }, 500);
 }
 main();
