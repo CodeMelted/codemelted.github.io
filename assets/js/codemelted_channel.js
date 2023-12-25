@@ -71,7 +71,10 @@ function setupSocialHandlers() {
     if (btnDevJSON) {
         btnDevJSON.onclick = (e) => {
             e.preventDefault();
-            popupWindow("https://developer.codemelted.com/feed.json");
+            const href = window.location.href.includes("content")
+                ? "https://content.codemelted.com/feed.json"
+                : "https://developer.codemelted.com/feed.json";
+            popupWindow(href);
         }
     }
 
