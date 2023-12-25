@@ -82,36 +82,38 @@ function setupSocialHandlers() {
 }
 
 async function  main() {
-    // Add a home button for the PWA to our page.
-    const html = `
-        <style>
-            .cm-round-button {
-                position: fixed;
-                bottom: 75px;
-                right: 15px;
-                display: block;
-                width: 80px;
-                height: 80px;
-                line-height: 80px;
-                border: 2px solid black;
-                border-radius: 50%;
-                text-align: center;
-                text-decoration: none;
-                background: #555777;
-                box-shadow: 0 0 3px gray;
-                font-size: 20px;
-                font-weight: bold;
-            }
-            @media print {
+    setTimeout(() => {
+        // Add a home button for the PWA to our page.
+        const html = `
+            <style>
                 .cm-round-button {
-                    display: none;
+                    position: fixed;
+                    bottom: 75px;
+                    right: 15px;
+                    display: block;
+                    width: 80px;
+                    height: 80px;
+                    line-height: 80px;
+                    border: 2px solid black;
+                    border-radius: 50%;
+                    text-align: center;
+                    text-decoration: none;
+                    background: #555777;
+                    box-shadow: 0 0 3px gray;
+                    font-size: 20px;
+                    font-weight: bold;
                 }
-            }
-        </style>
-        <a title="CodeMelted - PWA" href="https://codemelted.com"><img class="cm-round-button" src="https://codemelted.github.io/assets/images/icons/phone-home.png" /></a>
-    `;
-    document.body.innerHTML += html;
-    setupSocialHandlers();
-    // TODO: Hookup our codemelted_fullstack module broadcast channel
+                @media print {
+                    .cm-round-button {
+                        display: none;
+                    }
+                }
+            </style>
+            <a title="CodeMelted - PWA" href="https://codemelted.com"><img class="cm-round-button" src="https://codemelted.github.io/assets/images/icons/phone-home.png" /></a>
+        `;
+        document.body.innerHTML += html;
+        setupSocialHandlers();
+        // TODO: Hookup our codemelted_fullstack module broadcast channel
+    }, 500);
 }
 main();
