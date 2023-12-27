@@ -82,37 +82,55 @@ Transactional use cases represent use cases where you ask and then get an answer
 
 Their are multiple common items one can query about the environment their application runs on. This use case will provide a set of these common queries to allow for quick access to the information.
 
+<mark>v1.0.0</mark>
+
 #### Console
 
 A user interface is too hot. A command line interface is too cold. Interacting with a user via STDIN / STDOUT is just right. This will provide basic prompts to get answers from the user without all the fancy user interface glitz.
+
+<mark>v1.0.0</mark>
 
 #### Data
 
 This use case will provide a set of functions for checking, transforming, and validating data. Each module will essentially make use of dynamic data. Provide this is key for successful application data transactions.
 
+<mark>v1.0.0</mark>
+
 #### Error
 
 Things can fail. This use case provides the user the ability to access the last transactions success or failure. If a use case request fails, an error will be accompanied with the use case function. If it was successful, then no error message will exist. Each use case transaction will clear this value.
+
+<mark>v1.0.0</mark>
 
 #### Logger
 
 Regardless of what managers tell you, without data, we can't fix it. This use case will utilize the logging facilities available to the language SDK implementing a common logging level schema and signature. It will also expose a log handler environment allowing you to further process logged events.
 
+<mark>v1.0.0</mark>
+
 #### Math
 
 This use case will provide a collection of math formulas. The user will simple specify the formula, provide the data, and poof, the answer will appear.
+
+<mark>v3.0.0</mark>
 
 #### Runtime
 
 The module SDKs will have very specific SDK strengths that may not be available to all modules. This use case will cover such requests. Where commonality exists, it will be provided. For everything else, it will be specific to the particular module SDK.
 
+<mark>v1.0.0</mark>
+
 #### Task
 
 This use case provides a developer the ability to schedule one-shot asynchronous task processing either on the main thread or the background so you can do more then one thing. You can also schedule repeating tasks and cancel them later.
 
+<mark>v1.0.0</mark>
+
 #### UI
 
 This use case will provide the developer the ability to define a single page application. This singular view will then utilize a controller that allows for the updating of the UI state. It will also provide dialog functions to present other information to a user. Also attached with this use case is the building of specific widgets and layouts to build out the single page application view.
+
+<mark>v2.0.0</mark>
 
 ### Protocol
 
@@ -128,13 +146,19 @@ The shortest path between two point is a synchronous straight line. Well imagine
 
 This can be programs / services that provide a command line interface (CLI) or a text based protocol that are running on the same computer your application will run. This use case will wrap the ability to start / interact with such a program / service via STDIN / STDOUT / STDERR pipes available via the operating system.
 
+<mark>v1.0.0</mark>
+
 ##### Task Workers
 
 This use case provides a developer the ability to schedule asynchronous task processing where tasks are queued up in First In First Out (FIFO) order for processing. This can occur on the main thread or background thread if available to the module SDK implementation.
 
+<mark>v1.0.0</mark>
+
 #### Audio
 
 Apps need the ability to play sound. This use case provides the ability to play back audio files. This use case will also provide the ability to perform text-to-speech actions.
+
+<mark>v1.0.0</mark>
 
 #### Network
 
@@ -146,9 +170,13 @@ A network allows computers to exchange information via the Internet. The protoco
 
 This use case will provide the setup of such a communication for your web applications.
 
+<mark>v1.0.0</mark>
+
 ##### Fetch / HTTP
 
 The Internet implemented a one REST policy. REST APIs provide services to allow clients to interact with their services to include any ones you implement. This use case provides the means to interact and define these APIs.
+
+<mark>v1.0.0</mark>
 
 ##### WebSocket
 
@@ -156,11 +184,15 @@ The Internet implemented a one REST policy. REST APIs provide services to allow 
 
 This use case will provide the ability to connect ans serve this protocol to provide two way communication between web applications.
 
+<mark>v4.0.0</mark>
+
 ##### WebRTC
 
 >With [WebRTC](https://webrtc.org/), you can add real-time communication capabilities to your application that works on top of an open standard. It supports video, voice, and generic data to be sent between peers, allowing developers to build powerful voice- and video-communication solutions. The technology is available on all modern browsers as well as on native clients for all major platforms.
 
 This use case will provide the ability to connect and define such real-time communications between your web applications.
+
+<mark>v4.0.0</mark>
 
 #### Peripheral
 
@@ -174,21 +206,29 @@ The sub-sections below describe the different protocols this use case will creat
 
 This use case will provide the elements of this protocol so you can interact with such data within your application.
 
+<mark>v4.0.0</mark>
+
 ##### MIDI
 
 >[MIDI (/ˈmɪdi/; Musical Instrument Digital Interface)](https://en.wikipedia.org/wiki/MIDI) is a technical standard that describes a communication protocol, digital interface, and electrical connectors that connect a wide variety of electronic musical instruments, computers, and related audio devices for playing, editing, and recording music.
 
 This use case will provide the elements of this protocol to exchange read and write such data.
 
+<mark>v4.0.0</mark>
+
 ##### Orientation
 
 Modern mobile devices are equipped with sensors (i.e. GPS, accelerometer, gyroscope, etc.) for determining your orientation in 3 dimensional space. This use case will wrap those sensors to properly report updates in 3D space of your application.
+
+<mark>v1.0.0</mark>
 
 ##### USB
 
 ><a href="https://en.wikipedia.org/wiki/RS-232" target="_blank">RS-232</a> and later USB represent wired protocols for communicating with connected devices to read / write data.
 
 This use case will expose the capabilities to communicate with such connected devices to exchange data.
+
+<mark>v4.0.0</mark>
 
 #### Storage
 
@@ -198,13 +238,19 @@ Every kitchen has a junk drawer that can store all necessary items locally. You 
 
 Databases allow you to store more complex relational data. Enterprise layer applications and services will use enterprise later solutions (mySql, postgres, etc.). This use case will implement an embedded database based on the technology available to the module SDK.
 
+<mark>v4.0.0</mark>
+
 ##### File
 
 Files on disk allow you to read and write data from disk. This use case will provide the ability to write string or binary data within the file with the ability to seek anywhere within the file.
 
+<mark>v1.0.0</mark>
+
 ##### Key-Value
 
 This use case will provide a simple key / value pair string storage capability representing the easiest of the storage methods available via the modules.
+
+<mark>v1.0.0</mark>
 
 ## Module Design
 
@@ -250,13 +296,11 @@ The following documents the version of this document and explains the *CodeMelte
 ```
 X.Y.Z (dd mmm yyyy):
 ^ All module use cases are implemented
-  ^ An individual use case becomes available
+  ^ An individual use case becomes available or is tweaked significantly
     ^ Use case fixes / tweaks
 ```
 
-As the CodeMelted modules are developed, they will be versioned as identified above. A use case is considered available when a sufficient portion of its functionality is developed, tested, and documented. This will reset the `.Z` for any fixes made to existing available module use cases. When everything is done, it will be released as `1.0.0`.
-
-- *NOTE: The `2.0.0` version of any module is considered something outside this design document. It will be covered with a similar document as this if something is ever considered worthy* 🙂.
+As the CodeMelted modules are developed, they will be versioned as identified above. A use case is considered available when a sufficient portion of its functionality is developed, tested, and documented. This will reset the `.Z` for any fixes made to existing available module use cases. When everything is done with an identified major version, it will be released as `X.0.0` release.
 
 # License
 
